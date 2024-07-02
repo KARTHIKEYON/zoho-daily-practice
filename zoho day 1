@@ -19,3 +19,37 @@ public class Main{
 ENter the digit: 987654321
 the numbers are: 9
 -------------------------------------------------------------
+2. eligibility checker
+
+import java.util.*;
+public class Main{
+     static int age(int a){
+        if(a>=18 && a<=35){
+            return 1;
+        }
+        return 0;
+    }
+    public static void main(String[] arg){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the age:");
+        int a=sc.nextInt();
+        int ret = age(a);
+        System.out.println("enter exp:");
+        int exp=sc.nextInt();
+        if(ret!=1){
+            System.out.println("not elg");
+        }
+        else if(ret==1 && exp>2){
+            System.out.println("elg");
+        }
+        else{
+            System.out.println("elg");
+        }
+        } 
+}
+
+enter the age:18
+enter exp:2
+1
+--------------------------------------------------------
+
